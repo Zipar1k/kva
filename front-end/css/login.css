@@ -1,0 +1,28 @@
+body {
+    color: #E3FFDA;
+    background-color: #2A5329;
+    margin-top: 5%;
+}
+.submit {
+    display: none;
+}
+::placeholder {
+    color: #4D414D;
+}
+
+.wonder_back {
+    background-color: #659664;
+}
+input {
+    font-family: "Quicksand", serif;
+    color: #4D414D;
+}
+
+@font-face {
+/* название шрифта(чтобы не запутаться лучше указать название папки со шрифтом)*/
+font-family: "Quicksand";
+/*адрес шрифта и тип*/
+src: url("/front-end/fonts/quicksand/Quicksand-Regular.otf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
