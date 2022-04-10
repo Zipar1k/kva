@@ -1,0 +1,36 @@
+/* Фон шапки */
+nav {
+    background-color: #659664;
+}
+
+/* Основной фон сзади */
+body {
+    background-color: #2A5329;
+}
+
+main {
+    background-color: #E9CD85;
+    margin-top: 40px;
+}
+button {
+    width: 150px;
+    height: 100px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: #C4C4C4;
+}
+.btn-block {
+    display: inline-block;
+}
+
+footer {
+    background-color: #2A5329;
+    position: fixed;
+    width: 100%;
+    bottom: 5%;
+    height: 5%;
+}
+hr {
+    width: 90%;
+    color: #E3FFDA;
+}

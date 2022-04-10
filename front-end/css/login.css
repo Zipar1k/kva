@@ -12,6 +12,7 @@ body {
 
 .wonder_back {
     background-color: #659664;
+    border-radius: 20px;
 }
 input {
     font-family: "Quicksand", serif;
@@ -19,10 +20,8 @@ input {
 }
 
 @font-face {
-/* название шрифта(чтобы не запутаться лучше указать название папки со шрифтом)*/
-font-family: "Quicksand";
-/*адрес шрифта и тип*/
-src: url("/front-end/fonts/quicksand/Quicksand-Regular.otf") format("truetype");
+    font-family: "Quicksand";
+    src: url("/front-end/fonts/quicksand/Quicksand-Regular.otf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
