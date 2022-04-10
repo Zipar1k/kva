@@ -8,29 +8,33 @@ body {
     background-color: #2A5329;
 }
 
-main.container{
+article {
     background-color: #E9CD85;
-    margin-top: 40px;
-    display: block;
+    display: inline;
+}
+
+.history {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+button {
+    margin: 45px;
+    background-color: #C4C4C4
+}
+
+h6 {
+    display: inline;
+    background-color: #C4C4C4;
+    margin: 20px;
 }
 
 main {
-    min-height: calc(88vh - 80px);
-}
-
-
-button {
-    width: 150px;
-    height: 100px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    background-color: #C4C4C4;
-}
-.btn-block {
-    display: inline-block;
+    min-height: calc(85vh - 80px);
 }
 
 hr {
     width: 90%;
+    background: #2A5329;
     color: #E3FFDA;
 }
