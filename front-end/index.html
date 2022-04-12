@@ -11,53 +11,43 @@
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link type="text/css" rel="stylesheet" href="css/base.css">
 
     <link type="text/css" rel="stylesheet" href="css/index.css">
 </head>
 <body>
 <nav>
     <div class="nav-wrapper">
-        <div class="row left brand-logo">
-            <img style="margin: 5px;" class="hide-on-med-and-down" src="img/icon.svg" width="60" alt="Logo"/>
-            <h4 class="left brand-logo" style="margin-left: 20px">НЕМОЙКАБИНЕТ</h4>
-        </div>
+        <div class="kva-head">
+            <img class="hide-on-med-and-down material-icons brand-logo" src="img/icon.svg" alt="Logo"/>
+            <img class="kva-avatar" src="img/account_avatar.svg">
+            <div>НЕМОЙКАБИНЕТ <a href="#" class="kva-question hide-on-med-and-down">?</a></div>
 
-        <a href="/account"><img class="right brand-logo" src="img/account_avatar.svg" alt="Avatar" height="60"/></a>
+        </div>
     </div>
 </nav>
 
 <main class="container center">
     <div class="container center" style="margin-top: 40px;">
-        <!-- Часть страницы для больших экранов -->
-        <ul class="right hide-on-med-and-down">
-            <li><h3>Этажи</h3></li>
-            <li><a href="/floor_1"><button class="btn grey">1 этаж</button></a></li>
-            <li><a href="/floor_2"><button class="btn grey">2 этаж</button></a></li>
-            <li><a href="/floor_3"><button class="btn grey">3 этаж</button></a></li>
-        </ul>
-
-        <!-- Часть страницы для телефонов -->
-        <ul class="center show-on-med-and-down hide-on-large-only">
-            <li><h3>Этажи</h3></li>
-            <li><a href="/floor_1"><button class="btn grey">1 этаж</button></a></li>
-            <li><a href="/floor_2"><button class="btn grey">2 этаж</button></a></li>
-            <li><a href="/floor_3"><button class="btn grey">3 этаж</button></a></li>
-        </ul>
-
-        <img src="img/school_floor_3.jpg" alt="План школы" width="400" style="margin: 15px;"/>
-    </div>
-    <div class="center container btn-block">
-        <h3>Кабинеты</h3>
-        <a href="/cabinet/302"><button class="btn-block btn grey">302</button></a>
-        <a href="/cabinet/302"><button class="btn-block btn grey">302</button></a>
-        <a href="/cabinet/302"><button class="btn-block btn grey">302</button></a>
-        <a href="/cabinet/302"><button class="btn-block btn grey">302</button></a>
-        <a href="/cabinet/302"><button class="btn-block btn grey">302</button></a>
-        <a href="/cabinet/302"><button class="btn-block btn grey">302</button></a>
-        <a href="/cabinet/302"><button class="btn-block btn grey">302</button></a>
-        <a href="/cabinet/302"><button class="btn-block btn grey">302</button></a>
-        <a href="/cabinet/302"><button class="btn-block btn grey">302</button></a>
-        <a href="/cabinet/302"><button class="btn-block btn grey">302</button></a>
+<!--        <img src="img/school_floor_3.jpg" class="hide-on-med-and-down">-->
+        <div class="kva-floor-buttons">
+            <button class="waves-effect btn kva-button">1 этаж</button>
+            <button class="waves-effect btn kva-button">2 этаж</button>
+            <button class="waves-effect btn kva-button">3 этаж</button>
+        </div>
+        <h4 class="center">Кабинеты</h4>
+        <div class="center kva-cabinets">
+            <a href="#"><button class="waves-effect btn kva-button">300</button></a>
+            <a href="#"><button class="waves-effect btn kva-button">301</button></a>
+            <a href="#"><button class="waves-effect btn kva-button">302</button></a>
+            <a href="#"><button class="waves-effect btn kva-button">303</button></a>
+            <a href="#"><button class="waves-effect btn kva-button">304</button></a>
+            <a href="#"><button class="waves-effect btn kva-button">305</button></a>
+            <a href="#"><button class="waves-effect btn kva-button">306</button></a>
+            <a href="#"><button class="waves-effect btn kva-button">307</button></a>
+            <a href="#"><button class="waves-effect btn kva-button">308</button></a>
+            <a href="#"><button class="waves-effect btn kva-button">309</button></a>
+        </div>
     </div>
 
 </main>
