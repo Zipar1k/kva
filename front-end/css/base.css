@@ -1,3 +1,10 @@
+.floating-frog {
+    position: absolute;
+    top: -15px;
+    margin-left: 300px;
+    height: 100%;
+}
+
 body {
     background-color: #FEFFF1;
     color: #000000;
