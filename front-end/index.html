@@ -16,16 +16,22 @@
     <script>
 
         function changeOnFloor1() {
+            document.getElementById("picture").setAttribute("src", "img/floor_1.png");
+
             document.getElementById("1").style.display = "inline-block";
             document.getElementById("2").style.display = "none";
             document.getElementById("3").style.display = "none";
         }
         function changeOnFloor2() {
+            document.getElementById("picture").setAttribute("src", "img/floor_2.png");
+
             document.getElementById("2").style.display = "inline-block";
             document.getElementById("1").style.display = "none";
             document.getElementById("3").style.display = "none";
         }
         function changeOnFloor3() {
+            document.getElementById("picture").setAttribute("src", "img/floor_3.png");
+
             document.getElementById("3").style.display = "inline-block";
             document.getElementById("2").style.display = "none";
             document.getElementById("1").style.display = "none";
@@ -42,7 +48,7 @@
 </header>
 
 <main>
-    <img class="hide-on-med-and-down" src="img/floor_1.png" alt="Floor"/><br/><br />
+    <img id="picture" class="hide-on-med-and-down" src="img/floor_1.png" alt="Floor"/><br/><br />
     <div class="floors">
         <button onclick="changeOnFloor1()">1 этаж</button>
         <button onclick="changeOnFloor2()">2 этаж</button>
