@@ -2,3 +2,62 @@ body {
     background-color: #FEFFF1;
     color: #000000;
 }
+
+footer {
+    min-height: 50px;
+    width: 97%;
+    position: absolute;
+    bottom: 0;
+    color: #FFBAB5;
+}
+footer div {
+    text-align: center;
+}
+footer hr {
+    margin-left: 10%;
+    margin-right: 10%;
+    align-items: center;
+
+    size: 10px;
+    color: #FFBAB5;
+}
+
+header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100px;
+    width: 100%;
+    background-color: #659664;
+}
+
+header p {
+    position: absolute;
+    margin-left: 60px;
+
+    font-size: 30px;
+    color: #E3FFDA;
+    stroke-width: 2px;
+    -webkit-text-stroke-color: #58CDED;
+
+}
+
+
+.flying-circle {
+    position: absolute;
+    top: 30px;
+    margin-left: 10px;
+    font-size: 30px;
+
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 100%;
+    color: #659664;
+    background-color: #E3FFDA;
+}
+
+.avatar {
+    float: right;
+    height: 100%;
+}
