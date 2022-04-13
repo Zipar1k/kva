@@ -27,21 +27,27 @@
     <img class="sitting-frog" src="img/sitting_frog.png" alt="sitting frog">
     <div>
         <form>
-            <div class="left">
-                <button type="submit" class="red lighten-3 btn">Забронировать</button>
+            <div class="kva-left">
+                <button type="submit" class="red lighten-3">Забронировать</button>
                 <label>
                     <input name="date" type="date" class="datepicker">
                 </label>
                 <label>
                     <input name="time" type="time" class="timepicker">
                 </label>
-                <button class="red lighten-3 btn">Отменить бронь</button>
-                <button class="red lighten-3 btn">Выйти</button>
+                <button class="red lighten-3">Отменить бронь</button>
+                <button class="red lighten-3">Выйти</button>
             </div>
-            <div class="center"></div>
-            <div class="right kva-cabinet">
-                <h3>Кабинет 101</h3>
-                <h4>Количество парт:</h4> <input name="tables_count" type="number"/>
+
+            <div class="kva-right">
+                <div>
+                    <h3 class="cabinet-chosen">Кабинет 101</h3>
+                    <h4>Количество парт</h4> <input class="inline-field" name="tables_count" type="number"/>
+                    <p class="about_tools">
+                        <input name="availability_of_tools" class="black-text" type="checkbox" id="about_tools" />
+                        <label for="about_tools">Наличие приборов</label>
+                    </p>
+                </div>
             </div>
         </form>
     </div>

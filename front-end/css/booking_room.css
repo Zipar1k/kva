@@ -21,54 +21,61 @@ main {
     background-color: #FEDBD6;
 }
 
-main div {
+form {
     display: block;
+    horiz-align: center;
+    vertical-align: middle;
+    margin-left: 10%;
+    margin-top: 10px;
+    margin-right: 10%;
 }
 
-main div .center, main div .left, main div .right{
-    margin-left: 15%;
-    margin-top: 80px;
-    height: 100%;
-}
-
-main div .center {
-    width: 10%;
-}
-main div .left, main div .right {
-    width: 15%;
-    height: 60%;
-}
-
-.left {
-    display: list-item;
-    list-style: none;
-}
-
-.right {
+.kva-left {
     position: absolute;
+    float: left;
     display: block;
-    left: 55%;
-    top: -30px;
-    background-color: #B5CB5C;
+    height: 30%;
+    top: 20%;
+    left: 15%;
 }
 
 button {
-    position: relative;
-    top: -30px;
-    font-size: 30px;
+    border-radius: 10px;
+    border: none;
 
-    margin-top: 10px;
-    width: 100%;
-    align-items: center;
+    margin-top: 15px;
+
+    font-size: 30px;
+    background-color: #000000;
+}
+
+.kva-right {
+    position: absolute;
+    top: 20%;
+    left: 60%;
+    height: 30%;
+    float: right;
     display: block;
     text-align: center;
 
-    border: none;
-    border-radius: 15px;
+    width: 25%;
+    background-color: #B5CB5C;
 }
 
-.kva-cabinet {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.kva-right div {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.kva-counter {
+    width: 25%;
+}
+
+.about_tools label{
+    color: #000;
+    font-size: 30px;
+}
+
+.cabinet-chosen {
+    text-decoration: underline;
 }
