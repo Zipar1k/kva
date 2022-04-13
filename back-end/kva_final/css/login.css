@@ -1,0 +1,59 @@
+body {
+    background-image: url("/front-end/img/background.png");
+}
+
+.kva-login {
+    margin-top: 20%;
+    min-height: 270px;
+    min-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15em;
+
+    background-color: #B5CB5C;
+
+    border-radius: 15px;
+}
+
+.kva-input {
+    font-size: 30px;
+
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: left;
+
+    background-color: #FEDBD6;
+    border: none;
+    border-radius: 15px;
+
+}
+
+.kva-login p {
+    font-size: 30px;
+
+    text-align: center;
+
+    color: #FEFFF1;
+}
+
+.kva-login div {
+    display: inline-block;
+    align-items: center;
+    margin-left: 10%;
+}
+
+.kva-submit {
+    font-size: 30px;
+
+    margin-top: 15px;
+    width: 100%;
+    align-items: center;
+    display: block;
+    text-align: center;
+
+    background-color: #FEB9B4;
+    border: none;
+    border-radius: 15px;
+}

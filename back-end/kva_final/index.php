@@ -1,4 +1,10 @@
-<a href="/profil.php"><!DOCTYPE html>
+<?php
+    session_start();
+    if (!$_SESSION['user']){
+        header('Location: login.php');
+    }
+    ?>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <title> KvA - этажи </title>
@@ -43,8 +49,8 @@
 <header>
     <p>НЕМОЙКАБИНЕТ</p>
     <div class="flying-circle">?</div>
-    <img class="avatar" src="img/avatar.png" alt="Ava">
-    <a href="/account.php"><img class="floating-frog hide-on-med-and-down" src="img/floating_frog.png" alt="Float frog"></a>
+    <a href="/account.php"><img class="avatar" src="img/avatar.png" alt="Ava"></a>
+   <img class="floating-frog hide-on-med-and-down" src="img/floating_frog.png" alt="Float frog">
 </header>
 
 <main>

@@ -1,0 +1,58 @@
+.floating-frog {
+    position: absolute;
+    top: -15px;
+    margin-left: 300px;
+    height: 100%;
+}
+
+main {
+    position: absolute;
+    display: block;
+    top: 150px;
+    left: 80px;
+    right: 80px;
+    bottom: 90px;
+
+    background-color: #B5CB5C;
+}
+
+main img {
+    position: relative;
+    left: 30px;
+    float: left;
+    top: 30px;
+    height: 90%;
+}
+
+.floors button {
+    position: relative;
+    left: 13vw;
+    margin-left: 10px;
+    margin-top: 10px;
+
+    border: None;
+    height: 50px;
+    width: 100px;
+    background-color: #FEDBD6;
+}
+
+.cabinets button {
+    position: relative;
+    margin-top: 10px;
+    margin-left: 10px;
+
+    width: 100px;
+    height: 50px;
+}
+
+
+
+.cabinets {
+    position: relative;
+    display: inline-block;
+    left: 10%;
+    width: 25%;
+    height: 80%;
+
+    background-color: #FEDBD6;
+}

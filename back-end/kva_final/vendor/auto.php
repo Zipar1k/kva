@@ -12,14 +12,13 @@
 		$_SESSION['user'] = [
 			"id" => $user['id'],
 			"full_name" => $user['full_name'],
-			"login" => $user['login'],
-			"floor" => 1
+			"login" => $user['login']
 		];
-		header('Location: ../carta.php');
+		header('Location: ../index.php');
 	}
 	else{
 		$_SESSION['msg'] = 'Пользователь не найден';
-		header('Location: ../index.php');
+		header('Location: ../login.php');
 	}
 
 mysqli_close();
