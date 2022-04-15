@@ -3,57 +3,53 @@ body {
 }
 
 .kva-login {
-    margin-top: 20%;
-    min-height: 270px;
-    min-width: 550px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 15em;
-
     background-color: #B5CB5C;
-
     border-radius: 15px;
-}
 
-.kva-input {
-    font-size: 30px;
-
-    margin-top: 10px;
+    margin-top: 20%;
     margin-left: auto;
     margin-right: auto;
-    display: block;
-    text-align: left;
 
-    background-color: #FEDBD6;
-    border: none;
-    border-radius: 15px;
+    width: 30%;
+    min-width: 300px;
+    max-width: 800px;
 
+    height: 40%;
+
+    padding-top: 1px;
+    padding-bottom: 1px;
+
+    display: run-in flow;
 }
 
 .kva-login p {
-    font-size: 30px;
-
-    text-align: center;
-
     color: #FEFFF1;
+
+    font-size: 150%;
+    display: block;
+    text-align: center;
 }
 
-.kva-login div {
-    display: inline-block;
-    align-items: center;
-    margin-left: 10%;
+.kva-input {
+    display: block;
+    font-size: 1.5em;
+    margin-left: 30%;
+    width: 40%;
+    border: none;
+
+    border-radius: 20px;
+
+    margin-top: 1%;
+    padding-left: 8px;
+
+    background-color: #FEDBD6;
 }
 
 .kva-submit {
-    font-size: 30px;
-
-    margin-top: 15px;
-    width: 100%;
-    align-items: center;
     display: block;
-    text-align: center;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
 
     background-color: #FEB9B4;
-    border: none;
-    border-radius: 15px;
 }

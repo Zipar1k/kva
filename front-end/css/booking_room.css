@@ -1,74 +1,74 @@
-.sitting-frog {
-    position: absolute;
-    height: 200px;
-    top: -130px;
-    left: 50%;
-}
-
 main {
-    position: absolute;
-    top: 210px;
-    left: 5%;
-    width: 90%;
-    bottom: 90px;
     background-color: #FEDBD6;
 }
 
 form {
-    display: block;
-    horiz-align: center;
-    vertical-align: middle;
-    margin-left: 10%;
-    margin-top: 10px;
-    margin-right: 10%;
+    padding: 5%;
+    display: flex;
+    flex-direction: row;
 }
 
 .kva-left {
-    position: absolute;
-    float: left;
+    flex: 1;
     display: block;
-    height: 30%;
-    top: 20%;
-    left: 15%;
-}
-
-button {
-    border-radius: 10px;
-    border: none;
-
-    margin-top: 15px;
-
-    font-size: 30px;
-    background-color: #000000;
 }
 
 .kva-right {
-    position: absolute;
-    top: 20%;
-    left: 60%;
-    height: 30%;
-    float: right;
+    flex: 2;
     display: block;
+    padding: 20px;
+    margin-left: 20px;
     text-align: center;
-
-    width: 25%;
     background-color: #B5CB5C;
 }
 
-.kva-right div {
-    margin-left: 10%;
-    margin-right: 10%;
+.kva-booking {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
-.kva-counter {
-    width: 25%;
+#kva-book {
+    order: 0;
+}
+#kva-date {
+    order: 1;
+}
+#kva-time {
+    order: 2;
+}
+#cancel-book {
+    order: 3;
+}
+#exit {
+    order: 4;
 }
 
-.about_tools label{
+.kva-booking a {
+    display: block;
     color: #000;
-    font-size: 30px;
+}
+
+button {
+    width: 100%;
+    font-size: 1.5em;
+    margin-top: 10px;
+    border: none;
+}
+label {
+    color: #000;
+    font-size: 1.5em;
 }
 
 .cabinet-chosen {
     text-decoration: underline;
+}
+.block-field::placeholder {
+    color: #000;
+}
+
+.sitting-frog {
+    position: absolute;
+    top: calc(10vw + 30px);
+    height: 108px;
 }

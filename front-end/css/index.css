@@ -1,51 +1,38 @@
 main {
-    position: absolute;
-    display: block;
-    top: 150px;
-    left: 80px;
-    right: 80px;
-    bottom: 90px;
-
     background-color: #B5CB5C;
 }
-
-main img {
-    position: relative;
-    left: 30px;
-    float: left;
-    top: 30px;
-    height: 90%;
+.kva-menu {
+    display: flex;
+    flex-direction: row;
 }
 
-.floors button {
-    position: relative;
-    left: 13vw;
-    margin-left: 10px;
+#picture {
+    order: 0;
+}
+#navigation {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    overflow: scroll;
+
+}
+
+.floors {
+    order: 0;
+    padding: 20px;
+    display: block;
+}
+.btn {
     margin-top: 10px;
-
-    border: None;
-    height: 50px;
-    width: 100px;
-    background-color: #FEDBD6;
+    color: #000;
 }
 
-.cabinets button {
-    position: relative;
-    margin-top: 10px;
-    margin-left: 10px;
-
-    width: 100px;
-    height: 50px;
-}
-
-
-
-.cabinets {
-    position: relative;
-    display: inline-block;
-    left: 10%;
-    width: 25%;
-    height: 80%;
-
+.kva-school {
+    order: 1;
+    margin: 20px;
+    padding: 10px;
+    display: block;
     background-color: #FEDBD6;
 }

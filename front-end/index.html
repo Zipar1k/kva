@@ -41,80 +41,90 @@
 <body>
 
 <header>
-    <p>НЕМОЙКАБИНЕТ</p>
-    <div class="flying-circle">?</div>
-    <img class="avatar" src="img/avatar.png" alt="Ava">
-    <a href="/account.php"><img class="floating-frog hide-on-med-and-down" src="img/floating_frog.png" alt="Float frog"></a>
+    <a href="#">
+        <p>НЕМОЙКАБИНЕТ</p>
+        <div class="flying-circle">?</div>
+
+        <img class="floating-frog hide-on-med-and-down" src="img/floating_frog.png" alt="Float frog">
+    </a>
+    <a href="/account.php">
+        <img class="avatar" src="img/avatar.png" alt="Ava">
+    </a>
 </header>
 
 <main>
-    <img id="picture" class="hide-on-med-and-down" src="img/floor_1.png" alt="Floor"/><br/><br />
-    <div class="floors">
-        <button onclick="changeOnFloor1()">1 этаж</button>
-        <button onclick="changeOnFloor2()">2 этаж</button>
-        <button onclick="changeOnFloor3()">3 этаж</button> <br /><br />
+    <div class="kva-menu">
+        <img id="picture" class="hide-on-med-and-down" src="img/floor_1.png" alt="Floor"/><br/><br />
+        <div id="navigation">
+            <div class="floors">
+                <button class="btn kva-btn red lighten-4" onclick="changeOnFloor1()">1 этаж</button>
+                <button class="btn kva-btn red lighten-4" onclick="changeOnFloor2()">2 этаж</button>
+                <button class="btn kva-btn red lighten-4" onclick="changeOnFloor3()">3 этаж</button>
+            </div>
+            <div class="kva-school">
+                <div class="cabinets" id="1">
+                    <a href="#"><button class="btn green">100</button></a>
+                    <a href="#"><button class="btn green">100</button></a>
+                    <a href="#"><button class="btn green">100</button></a>
+                    <a href="#"><button class="btn green">100</button></a>
+                    <a href="#"><button class="btn green">100</button></a>
+                    <a href="#"><button class="btn disabled">103</button></a>
+                    <a href="#"><button class="btn green">100</button></a>
+                    <a href="#"><button class="btn green">100</button></a>
+                    <a href="#"><button class="btn red">101</button></a>
+                    <a href="#"><button class="btn red">101</button></a>
+                    <a href="#"><button class="btn red">101</button></a>
+                    <a href="#"><button class="btn green">100</button></a>
+                    <a href="#"><button class="btn green">100</button></a>
+                    <a href="#"><button class="btn green">100</button></a>
+                    <a href="#"><button class="btn red">101</button></a>
+                    <a href="#"><button class="btn red">101</button></a>
+                    <a href="#"><button class="btn red">101</button></a>
+                    <a href="#"><button class="btn red">101</button></a>
+                </div>
+                <div class="cabinets" id="2" style="display: none;">
+                    <a href="#"><button class="btn green">200</button></a>
+                    <a href="#"><button class="btn green">200</button></a>
+                    <a href="#"><button class="btn green">200</button></a>
+                    <a href="#"><button class="btn green">200</button></a>
+                    <a href="#"><button class="btn green">200</button></a>
+                    <a href="#"><button class="btn disabled">203</button></a>
+                    <a href="#"><button class="btn green">200</button></a>
+                    <a href="#"><button class="btn green">200</button></a>
+                    <a href="#"><button class="btn red">201</button></a>
+                    <a href="#"><button class="btn red">201</button></a>
+                    <a href="#"><button class="btn red">201</button></a>
+                    <a href="#"><button class="btn green">200</button></a>
+                    <a href="#"><button class="btn green">200</button></a>
+                    <a href="#"><button class="btn green">200</button></a>
+                    <a href="#"><button class="btn red">201</button></a>
+                    <a href="#"><button class="btn red">201</button></a>
+                    <a href="#"><button class="btn red">201</button></a>
+                    <a href="#"><button class="btn red">201</button></a>
+                </div>
+                <div class="cabinets" id="3" style="display: none;">
+                    <a href="#"><button class="btn green">300</button></a>
+                    <a href="#"><button class="btn green">300</button></a>
+                    <a href="#"><button class="btn green">300</button></a>
+                    <a href="#"><button class="btn green">300</button></a>
+                    <a href="#"><button class="btn green">300</button></a>
+                    <a href="#"><button class="btn disabled">303</button></a>
+                    <a href="#"><button class="btn green">300</button></a>
+                    <a href="#"><button class="btn green">300</button></a>
+                    <a href="#"><button class="btn red">301</button></a>
+                    <a href="#"><button class="btn red">301</button></a>
+                    <a href="#"><button class="btn red">301</button></a>
+                    <a href="#"><button class="btn green">300</button></a>
+                    <a href="#"><button class="btn green">300</button></a>
+                    <a href="#"><button class="btn green">300</button></a>
+                    <a href="#"><button class="btn red">301</button></a>
+                    <a href="#"><button class="btn red">301</button></a>
+                    <a href="#"><button class="btn red">301</button></a>
+                    <a href="#"><button class="btn red">301</button></a>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="cabinets" id="1">
-        <button class="btn green">100</button>
-        <button class="btn green">100</button>
-        <button class="btn green">100</button>
-        <button class="btn green">100</button>
-        <button class="btn green">100</button>
-        <button class="btn disabled">103</button>
-        <button class="btn green">100</button>
-        <button class="btn green">100</button>
-        <button class="btn red">101</button>
-        <button class="btn red">101</button>
-        <button class="btn red">101</button>
-        <button class="btn green">100</button>
-        <button class="btn green">100</button>
-        <button class="btn green">100</button>
-        <button class="btn red">101</button>
-        <button class="btn red">101</button>
-        <button class="btn red">101</button>
-        <button class="btn red">101</button>
-    </div>
-    <div class="cabinets" id="2" style="display: none;">
-        <button class="btn green">200</button>
-        <button class="btn green">200</button>
-        <button class="btn green">200</button>
-        <button class="btn green">200</button>
-        <button class="btn green">200</button>
-        <button class="btn disabled">203</button>
-        <button class="btn green">200</button>
-        <button class="btn green">200</button>
-        <button class="btn red">201</button>
-        <button class="btn red">201</button>
-        <button class="btn red">201</button>
-        <button class="btn green">200</button>
-        <button class="btn green">200</button>
-        <button class="btn green">200</button>
-        <button class="btn red">201</button>
-        <button class="btn red">201</button>
-        <button class="btn red">201</button>
-        <button class="btn red">201</button>
-    </div>
-    <div class="cabinets" id="3" style="display: none;">
-        <button class="btn green">300</button>
-        <button class="btn green">300</button>
-        <button class="btn green">300</button>
-        <button class="btn green">300</button>
-        <button class="btn green">300</button>
-        <button class="btn disabled">303</button>
-        <button class="btn green">300</button>
-        <button class="btn green">300</button>
-        <button class="btn red">301</button>
-        <button class="btn red">301</button>
-        <button class="btn red">301</button>
-        <button class="btn green">300</button>
-        <button class="btn green">300</button>
-        <button class="btn green">300</button>
-        <button class="btn red">301</button>
-        <button class="btn red">301</button>
-        <button class="btn red">301</button>
-        <button class="btn red">301</button>
-    </div>
-
 </main>
 
 <footer>

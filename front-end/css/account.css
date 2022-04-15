@@ -1,104 +1,74 @@
-main {
-    position: absolute;
-    top: 140px;
-    bottom: 70px;
-    margin-left: 10%;
-    width: 85%;
-    /*background-color: #EE0000;*/
-    display: inline-block;
-}
-
 .waiting-frog {
     position: absolute;
-    width: 10vw;
-    top: -80px;
-    left: 70%;
-    z-index: 6;
+    width: 324px;
+    top: calc(10vw - 65px);
+    left: 65%;
+    z-index: 2;
 }
+
+.kva-main {
+    display: grid;
+    grid-template-areas: "account history";
+}
+
+.kva-left {
+    grid-area: account;
+    display: grid;
+    grid-template-areas: "img"
+                         "username";
+    padding: 10px;
+}
+
 
 .kva-right {
-    position: absolute;
-    width: 50%;
-    height: 100%;
-    /*background-color: #00EE00;*/
-}
-.kva-left {
-    position: absolute;
+    grid-area: history;
     display: block;
-    /*align-items: center;*/
-    left: 15%;
-    width: 50%;
-    height: 100%;
-    /*background-color: #0000EE;*/
-}
-
-.kva-left img {
-    position: relative;
-    left: -35vh;
-    top: 0;
-    z-index: 2;
-    margin-left: 25%;
-
-    width: 50%;
-
-    /*display: none;*/
-}
-.kva-left p {
-    position: relative;
-    left: -5vh;
-    top: 10vh;
-    justify-content: center;
-
-    width: 15em;
-    height: 6em;
-
-    display: flex;
-    align-items: center;
-
-    font-size: 20px;
-    background-color: #FFBAB5;
-    z-index: 2;
-}
-
-.kva-history {
-    position: relative;
-    display: inline-block;
-    left: 110%;
-    width: 80%;
-    margin-top: 50px;
-    height: 80%;
+    padding: 20px;
     background-color: #FEDBD6;
+}
 
-    z-index: 1;
+.kva-user-img {
+    grid-area: img;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.kva-user-block {
+    grid-area: username;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: block;
+    align-content: center;
+    word-wrap: break-word;
+}
+
+.kva-user {
+    padding: 10px;
+    font-size: 1.5em;
+    background-color: #FFBAB5;
 }
 
 .kva-menu {
-    position: relative;
-    left: 0;
-    margin: 20px;
-    font-size: 50px;
+    display: block;
+    font-size: 2em;
     text-align: center;
-    right: 0;
+    margin-bottom: 10px;
     background-color: #FFBAB5;
-
-    z-index: 2;
-}
-
-.kva-info {
-    margin: 20px;
 }
 
 .kva-list {
-    display: inline-block;
-    font-size: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    overflow: scroll;
 }
-
-.kva-list button {
-    margin-top: 10px;
-    margin-left: 15px;
-
-    width: 45%;
-
-    border: none;
-    background-color: #FFBAB5;
+.kva-list a {
+    color: #000000;
+    text-decoration: none;
+    margin-top: 4px;
+    margin-left: 2px;
 }

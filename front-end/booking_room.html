@@ -14,43 +14,72 @@
 
     <link type="text/css" rel="stylesheet" href="css/booking_room.css">
 </head>
+
 <body>
+
 <header>
-    <p>НЕМОЙКАБИНЕТ</p>
-    <div class="flying-circle">?</div>
-    <img class="avatar" src="img/avatar.png" alt="Ava">
-    <img class="floating-frog hide-on-med-and-down" src="img/floating_frog.png" alt="Float frog">
+    <a href="#">
+        <p>НЕМОЙКАБИНЕТ</p>
+        <div class="flying-circle">?</div>
+
+        <img class="floating-frog hide-on-med-and-down" src="img/floating_frog.png" alt="Float frog">
+    </a>
+    <a href="/account.php">
+        <img class="avatar" src="img/avatar.png" alt="Ava">
+    </a>
 </header>
-
-
 <main>
-    <img class="sitting-frog" src="img/sitting_frog.png" alt="sitting frog">
-    <div>
-        <form>
-            <div class="kva-left">
-                <button type="submit" class="red lighten-3">Забронировать</button>
-                <label>
+    <form>
+        <img class="sitting-frog hide-on-med-and-down" src="img/sitting_frog.png" alt="sitting frog">
+
+        <div class="kva-left">
+            <div class="kva-booking">
+                <a href="#" id="kva-book">
+                    <button type="submit" class="red lighten-3">
+                        Забронировать
+                    </button>
+                </a>
+
+                <label id=kva-date">
                     <input name="date" type="date" class="datepicker">
                 </label>
-                <label>
+
+                <label id="kva-time">
                     <input name="time" type="time" class="timepicker">
                 </label>
-                <button class="red lighten-3">Отменить бронь</button>
-                <button class="red lighten-3">Выйти</button>
-            </div>
 
-            <div class="kva-right">
-                <div>
-                    <h3 class="cabinet-chosen">Кабинет 101</h3>
-                    <h4>Количество парт</h4> <input class="inline-field" name="tables_count" type="number"/>
-                    <p class="about_tools">
-                        <input name="availability_of_tools" class="black-text" type="checkbox" id="about_tools" />
-                        <label for="about_tools">Наличие приборов</label>
-                    </p>
-                </div>
+                <a href="#" id="cancel-book">
+                    <button class="red lighten-3">
+                        Отменить бронь
+                    </button>
+                </a>
+
+                <a href="#" id="exit">
+                    <button class="red lighten-3">
+                        Выйти
+                    </button>
+                </a>
             </div>
-        </form>
-    </div>
+        </div>
+
+        <div class="kva-right">
+            <div>
+                <h3 class="cabinet-chosen">Кабинет 101</h3>
+                <input class="block-field" placeholder="Количество парт" name="tables_count" type="number"/>
+                <p class="about_tools">
+                    <input
+                            name="availability_of_tools"
+                            class="black-text"
+                            type="checkbox"
+                            id="about_tools"/>
+
+                    <label for="about_tools">
+                        Наличие приборов
+                    </label>
+                </p>
+            </div>
+        </div>
+    </form>
 </main>
 
 
